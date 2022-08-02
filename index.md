@@ -47,10 +47,10 @@ Subtitles for movies are in separate files.
 
 Movie	                           | text
 ---------------------------------|-------------------------------------------------
-10_Cloverfield_lane(2016)	       |<font color="#ffff80"><b>Fixed & Synced by boz...
+10_Cloverfield_lane(2016)	       |font color="#ffff80"<b>Fixed & Synced by boz...
 10_things_I_hate_about_you(1999) |Hey! I'll be right with you. So, Cameron. Here...
 A_knights_tale(2001)	           |Resync: Xenzai[NEF]\nRETAIL Should we help him...
-A_star_is_born(2018)	           |- <i><font color="#ffffff"> Synced and correct...
+A_star_is_born(2018)	           |<i><font color="#ffffff"> Synced and correct...
 Aladdin(1992)	                   |<i>Oh, I come from a land\nFrom a faraway plac...
   
 Subtitles are messy and contain a lot of service information.
@@ -150,32 +150,12 @@ We have a multi classification problem, so we will choose:
   
 **Accuracy** is the percentage of documents for which the classifier made the correct prediction.
 
-$Accuracy = \frac{P}{N}$
-
-where $P$ is the number of documents for which the classifier made the correct prediction, and $N$ is the size of the training sample.
-
 The **F1** metric is a harmonic mean between precision and recall.
-
-$F1= 2\times \frac{Precision \times Recall}{Precision + Recall}$
 
 The **precision** of the system within a class is the proportion of documents actually belonging to this class relative to all documents that the system has assigned to this class. 
 
-$Precision = \frac{TP}{TP + FP}$
-
 The **recall** of the system is the proportion of documents found by the classifier belonging to the class relative to all documents of this class in the test sample.
 
-$Recall = \frac{TP}{TP + FN}$
-
-where,
-
-$TP$ — true-positive prediction
-
-$TN$ — true-negative prediction
-
-$FP$ — false-positive prediction
-
-$FN$ — false-negative prediction
-  
 The model with the addition of generated data gave the good result of prediction accuracy and F1 metrics. 
 
 The initial classes are highly unbalanced, this is clearly visible in the precision and recall indicators, for poorly represented classes.
